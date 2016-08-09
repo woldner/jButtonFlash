@@ -1,0 +1,7 @@
+## Interface: 70000
+## Title: jButtonFlash
+## Notes: Replace the original action button pushed texture
+## Version: 1.0
+## Author: jwldnr
+
+jButtonFlash.lua
