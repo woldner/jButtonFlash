@@ -1,6 +1,6 @@
 ## Interface: 70000
 ## Title: jButtonFlash
-## Notes: Replace the original action button pushed texture
+## Notes: Add flash animation to pressed action button
 ## Version: 1.0
 ## Author: jwldnr
 
