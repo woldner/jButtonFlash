@@ -59,12 +59,12 @@ function Addon:SetupButtonFlash()
 
   local scale2 = animationGroup:CreateAnimation('Scale');
   scale2:SetScale(0, 0);
-  scale2:SetDuration(0.3);
+  scale2:SetDuration(.3);
   scale2:SetOrder(2);
 
   local rotation2 = animationGroup:CreateAnimation('Rotation');
   rotation2:SetDegrees(90);
-  rotation2:SetDuration(0.3);
+  rotation2:SetDuration(.3);
   rotation2:SetOrder(2);
 
   self.frame = frame;
