@@ -1,5 +1,6 @@
 -- locals and speed
 local AddonName, Addon = ...;
+
 local _G = _G;
 
 local TEXTURE_OFFSET = 3;
