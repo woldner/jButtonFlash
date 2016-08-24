@@ -33,7 +33,6 @@ function Addon:PLAYER_LOGIN()
   self:HookActionEvents();
 end
 
--- configuration
 function Addon:SetupButtonFlash()
   local frame = CreateFrame('Frame', nil);
 
