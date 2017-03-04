@@ -1,4 +1,4 @@
-## Interface: 70000
+## Interface: 70100
 ## Title: jButtonFlash
 ## Notes: Add flash animation to pressed action button
 ## Version: 1.0
