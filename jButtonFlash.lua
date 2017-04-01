@@ -46,11 +46,11 @@ function Addon:SetupButtonFlash()
 
   local animationGroup = texture:CreateAnimationGroup()
 
-  local alpha1 = animationGroup:CreateAnimation('Alpha')
-  alpha1:SetFromAlpha(0)
-  alpha1:SetToAlpha(1)
-  alpha1:SetDuration(0)
-  alpha1:SetOrder(1)
+  local alpha = animationGroup:CreateAnimation('Alpha')
+  alpha:SetFromAlpha(0)
+  alpha:SetToAlpha(1)
+  alpha:SetDuration(0)
+  alpha:SetOrder(1)
 
   local scale1 = animationGroup:CreateAnimation('Scale')
   scale1:SetScale(1.5, 1.5)
