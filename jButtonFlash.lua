@@ -35,13 +35,14 @@ end
 
 function Addon:SetupButtonFlash()
   local frame = CreateFrame('Frame', nil)
+  frame:SetFrameStrata('TOOLTIP')
 
   local texture = frame:CreateTexture()
   texture:SetTexture('Interface\\Cooldown\\star4')
   texture:SetAlpha(0)
   texture:SetAllPoints(frame)
   texture:SetBlendMode('ADD')
-  texture:SetDrawLayer('BACKGROUND', 7)
+  texture:SetDrawLayer('OVERLAY', 7)
 
   local animationGroup = texture:CreateAnimationGroup()
 
@@ -105,9 +106,6 @@ function Addon:AnimateButton(button)
 
   self.frame:SetPoint('TOPLEFT', button ,'TOPLEFT', -TEXTURE_OFFSET, TEXTURE_OFFSET)
   self.frame:SetPoint('BOTTOMRIGHT', button ,'BOTTOMRIGHT', TEXTURE_OFFSET, -TEXTURE_OFFSET)
-
-  self.frame:SetFrameStrata('HIGH')
-  self.frame:SetFrameLevel(button:GetFrameLevel())
 
   self.animationGroup:Stop()
   self.animationGroup:Play()
