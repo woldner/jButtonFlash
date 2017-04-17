@@ -3,6 +3,8 @@ local AddonName, Addon = ...
 
 local _G = _G
 
+local GetActionButtonForID = GetActionButtonForID
+
 local TEXTURE_OFFSET = 3
 
 -- main
@@ -24,7 +26,7 @@ function Addon:OnEvent(event, ...)
   local action = self[event]
 
   if (action) then
-    action(self, event, ...)
+    action(self, ...)
   end
 end
 
@@ -38,7 +40,7 @@ function Addon:SetupButtonFlash()
   frame:SetFrameStrata('TOOLTIP')
 
   local texture = frame:CreateTexture()
-  texture:SetTexture('Interface\\Cooldown\\star4')
+  texture:SetTexture([[Interface\Cooldown\star4]])
   texture:SetAlpha(0)
   texture:SetAllPoints(frame)
   texture:SetBlendMode('ADD')
@@ -104,8 +106,8 @@ end
 function Addon:AnimateButton(button)
   if (not button:IsVisible()) then return end
 
-  self.frame:SetPoint('TOPLEFT', button ,'TOPLEFT', -TEXTURE_OFFSET, TEXTURE_OFFSET)
-  self.frame:SetPoint('BOTTOMRIGHT', button ,'BOTTOMRIGHT', TEXTURE_OFFSET, -TEXTURE_OFFSET)
+  self.frame:SetPoint('TOPLEFT', button, 'TOPLEFT', -TEXTURE_OFFSET, TEXTURE_OFFSET)
+  self.frame:SetPoint('BOTTOMRIGHT', button, 'BOTTOMRIGHT', TEXTURE_OFFSET, -TEXTURE_OFFSET)
 
   self.animationGroup:Stop()
   self.animationGroup:Play()
