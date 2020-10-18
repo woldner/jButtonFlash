@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Interface: 90100
 ## Title: jButtonFlash
 ## Notes: Add flash animation to pressed action button
@@ -5,3 +6,12 @@
 ## Author: jwldnr
 
 jButtonFlash.lua
+=======
+## Interface: 80205
+## Title: jButtonFlash
+## Notes: Add flash animation to pressed action button
+## Version: 1.6
+## Author: jwldnr
+
+jButtonFlash.lua
+>>>>>>> 5c3fa6d2b99560c76b253f7240855b9c70f3fe59
