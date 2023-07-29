@@ -1,7 +1,8 @@
-## Interface: 100002
+## Interface: 100105
 ## Title: jButtonFlash (Dragonflight)
 ## Notes: Inspired by the old AddOn "SnowfallKeyPress", this AddOn adds flash animations to pressed action buttons.
-## Version: 1.8
+## IconTexture: Interface\Cooldown\star4
+## Version: 2.1
 ## Author: jwldnr
 
 jButtonFlash.lua
